@@ -90,19 +90,15 @@ nav a:hover {
 
 
 
-/* Estilo do banner */
 .banner {
     background: url('imagens/banner2.jpg') center/cover no-repeat;
     width: 100%;
-    height: auto;
+    /* Use um padding-bottom para manter a proporção da imagem, por exemplo, 40% para uma imagem mais horizontal */
+    padding-bottom: 40%; 
+    margin-top: -50px; /* Verifique se esse valor é realmente necessário */
     position: relative;
-    margin-top: -50px;
     z-index: 1;
-    object-fit: cover; /* Evita distorção */
-    margin: 0 auto; /* Centraliza */
-    display: block;
 }
-
 
 
 /* Estilo do carrossel */
