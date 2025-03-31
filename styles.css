@@ -43,14 +43,14 @@ nav a:hover {
 
 
 
-/* Estilo do subcabeçalho */
+/* sub-cabeçalho */
 .sub-header {
     background-color: #232f3e;
     display: flex;
     align-items: center;
-    justify-content: center;  /* Centraliza os itens dentro da sub-header */
+    justify-content: center;  
     padding: 10px 20px;
-    gap: 20px;  /* Adiciona um espaço entre o nav e a search-bar */
+    gap: 20px;  
 }
 
 .sub-header nav {
@@ -66,7 +66,7 @@ nav a:hover {
 
 .search-bar {
     display: flex;
-    gap: 5px;  /* Adiciona um espaço entre o input e o botão */
+    gap: 5px;  
 }
 
 .search-bar input {
@@ -89,20 +89,20 @@ nav a:hover {
 }
 
 
+/*Banner --------------------- */
 
 .banner {
     background: url('imagens/banner2.jpg') center/cover no-repeat;
     width: 100%;
-    /* Use um padding-bottom para manter a proporção da imagem, por exemplo, 40% para uma imagem mais horizontal */
-    padding-bottom: 40%; 
-    margin-top: -50px; /* Verifique se esse valor é realmente necessário */
+    height: 400px;
+    margin-top: -50px; 
     position: relative;
     z-index: 1;
 }
 
 
 
-/* Estilo do carrossel */
+/* carrossel ----------------- */
 
 .carousel {
     display: flex;
@@ -137,7 +137,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* trailer */
+/* trailer ----------------*/
 
 .trailer-section {
     margin: 20px 0;
@@ -157,7 +157,7 @@ footer {
     font-size: 14px;
 }
 
-/* Estilo da lista de jogos */
+/* lista de jogos------------- */
 
 .game-list {
     display: grid;
@@ -206,7 +206,7 @@ footer {
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%; /* Alinha o menu logo abaixo do link */
+    top: 100%; 
     left: 0;
     background-color: #343a40;
     border-radius: 5px;
@@ -237,11 +237,10 @@ footer {
 
 /* seção explorar */
 
-/* Estilo da seção */
 .category-section {
     text-align: center;
     padding: 20px;
-    background-color: #1c2531; /* Fundo semelhante ao exemplo */
+    background-color: #1c2531; 
     color: white;
 }
 
@@ -250,7 +249,6 @@ footer {
     font-size: 1.5rem;
 }
 
-/* Contêiner das categorias */
 .categories {
     display: flex;
     justify-content: center;
@@ -298,7 +296,7 @@ footer {
 
 /* TESTE RESPONSIVIDADE ------------ */
 
-/* ajustando como fiz no conectavagas */
+/* ajustando como fiz no conectavagas (esse pra telas até 768px) */
 @media (max-width: 768px) {
     header {
         display: flex;
@@ -328,6 +326,12 @@ footer {
         justify-content: center;
     }
 
+    .banner {
+        height: auto;
+        padding-bottom: 40%; /* Mantém a proporção da imagem */
+    }
+
+
     .carousel {
         width: 90%;
         height: auto;
@@ -349,7 +353,7 @@ footer {
     }
 }
 
-/* Ajustes para telas menores (até 480px) */
+/* Ajustes para telas até 480px */
 @media (max-width: 480px) {
     header img {
         height: 50px;
