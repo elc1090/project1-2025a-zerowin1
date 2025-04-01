@@ -1,66 +1,59 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-0GsTofh)
 # Projeto: Remake de site/app web
 
-> 1. Leia com atenção as instruções abaixo para editar este README em formato Markdown.
-> 2. Substitua todos os trechos de texto iniciados com "Substitua" por informações do seu projeto, conforme solicitado em cada trecho.
-> 3. Substitua a imagem por um screenshot do projeto (o arquivo pode ser armazenado no repositório ou em URL externa). GIFs animados também são permitidos!
-> 4. Remova todas as instruções de entrega.
-> 5. Double-check: Certifique-se de que seu README.md não contenha instruções de entrega!
-> 6. Entregue este README.md dentro da pasta raiz do seu repositório de entrega. Peça ajuda se não souber como editar ou entregar!
-> Opcional: você pode alterar a formatação do README, mas mantenha todas as informações solicitadas
-
-![Substitua a imagem ao lado por um screenshot do seu projeto](img/chops-ux-step-4.png "Screenshot do projeto. Imagem temporária extraída de https://mdswanson.com/static/chops-ux-step-4.png")
+(imagens/capa.png "Screenshot do projeto.")
 
 
-Acesso: Substitua este texto pela URL para acesso ao site publicado
+https://elc1090.github.io/project1-2025a-zerowin1/
 
 
 #### Desenvolvedor(a)
-Substitua este texto pela sua identificação: nome e curso
+Thales de Vargas Stamm - Sistemas de Informação
 
 #### Cliente
-Substitua este texto pela identificação do cliente
-
-
-
+Rafael Carneiro Pregardier
 
 #### Site/app original
+Steam
 
 ##### Link
-Substitua este texto pela URL do site/app escolhido
+https://store.steampowered.com/?l=portuguese
 
 ##### Descrição
-Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
+A Steam é uma plataforma de distribuição digital de jogos que oferece uma ampla variedade de títulos e conteúdos relacionados. Ela permite aos usuários adquirir, baixar e atualizar jogos de forma integrada, gerenciando uma biblioteca pessoal com facilidade. O design é composto por cores mais escuras, mas com alguns "toques" mais chamativos. Seu layout é organizado e exibe uma variedade de itens: banners sazonais, carrosséis de jogos, seções de promoção, recomendações... Tudo de uma maneira dinâmica e interativa, com animações sutis que fazem com que o usuário continue engajado sem que se sinta sobrecarregado com a quantidade de informações na tela.
 
 #### Demanda do(a) cliente
-Substitua este texto pela demanda do(a) cliente
+Poderia ter uma alteração estrutural em relação a posição dos jogos nas divisões. Além disso, número de jogos mostrados poderiam ser diminuídos. A implementação de um carrossel interativo com vários jogos a serem mostrado. Uma seção onde tem o trailer de algum jogo sendo reproduzido.
 
 #### Desenvolvimento
+Durante a reunião inicial com o cliente, definimos alguns pontos específicos sobre a direção do projeto. A principal demanda era oferecer uma interface limpa e intuitiva, o que levou a simplificar (ou remover) diversas seções presentes na Steam. Por exemplo, foi feita a remoção da barra lateral tradicional – considerada redundante – pois oferecia somente o acesso facilitado a recursos que podem ser acessados por meio de outras seções na página. Além disso, foi reduzido o número de jogos exibidos e o carrossel interativo também foi simplificado, exibindo apenas a capa do jogo. Detalhes como preço, categorias, comentários e outras informações só seriam apresentados após clique do usuário(feature não implementada).
 
-Substitua este texto por uma descrição do processo de desenvolvimento, explicando suas escolhas para o remake e etapas do trabalho (por exemplo, como foi coletado o conteúdo, como você lidou com as demandas, etc.)
+Também foram eliminadas seções específicas, como “Por até R$ 20” e “Atualizações e ofertas”, para manter em tela específicamente o que o cliente "pediu" para ver. Em relação ao trailer dos jogos, enquanto na Steam é necessário acessar a página individual de um jogo para visualizar seu trailer, no remake foi proposta uma seção de “Destaques e Recomendados” onde, por padrão, o trailer de um jogo em destaque é reproduzido. Ao selecionar uma categoria(na seção de categorias), os jogos exibidos e o vídeo em reprodução se atualizariam de acordo com o filtro aplicado.
 
+Todo o conteúdo visual foi coletado de fontes disponíveis na internet, normalmente inspecionando a página da Steam e salvando as imagens ou procurando alguma alternativa semelhante na internet. A única exceção foram as imagens das quatro categorias, que foram geradas por meio de uma ferramenta de IA.
 
 #### Tecnologias
-
-Substitua este trecho por uma lista detalhada de tecnologias usadas (tanto as básicas, como HTML e CSS, como as mais específicas, por exemplo Tailwind, etc.):
-- ...
-- ...
-- 
+- HTML
+- CSS
+- JavaScript
 
 #### Ambiente de desenvolvimento
-
-Substitua este trecho por uma lista detalhada dos ambientes/ferramentas de desenvolvimento que você usou (por exemplo, VS Code + alguma extensão, etc.)
-- ...
-- ...
+VS Code
 
 #### Referências e créditos
+- https://getbootstrap.com/
+- https://chatgpt.com/
+- https://store.steampowered.com/?l=portuguese
 
-Substitua este trecho por uma lista bem detalhada de todo material que você consultou para ajudar no projeto, por exemplo:  URL de templates usados, URL de icon kits usados, créditos para colegas que colaboraram, geradores de código (incluindo alguns prompts usados para o ChatGPT, se for o caso)
-- ...
-- ...
+- Usei o chatgpt para facilitar o preenchimento do código e pedir dicas de onde buscar conteúdo.
+ex de prompt:
+"de todos os itens presentes "loja, novidades, categorias" precisam de um dropdown, me ajude a selecionar 3 itens que são necessários para compor cada um"
 
+- sobre a busca de conteúdo, foi mais para o carrossel interativo, inclusive encontrei modelos muito bons, mas como mantive no html/css básico, acabei optando por utilizar o do bootstrap.
 
+- Em alteração e design dos elementos da tela (tamanhos, cores, posicionamento) consultei bastante o chat;
 
+- Na primeira tentativa de colocar o vídeo para reproduzir, pensei em deixar ele mais "cinemático" e tirar botões da imagem (tela cheia, volume, pause da tela), assim controlando por eventos tipo onmouseover ou onclick, o chat também me ajudou com esses scripts mas no fim deixei somente o player.
 
 ---
 Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2025a) em 2025a
