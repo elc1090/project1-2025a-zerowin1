@@ -1,10 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-0GsTofh)
 # Projeto: Remake de site/app web
 
-(imagens/capa.png "Screenshot do projeto.")
+!(imagens/capa.png "Screenshot do projeto.")
 
 
-https://elc1090.github.io/project1-2025a-zerowin1/
+Acesso: https://elc1090.github.io/project1-2025a-zerowin1/
 
 
 #### Desenvolvedor(a)
